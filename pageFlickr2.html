@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title></title>
+    <style>
+        .btnLogin:hover {
+            color: white;
+        }
+
+        header {
+            height: 700px;
+        }
+
+        .top60px {
+            top: 60px;
+        }
+
+        .h300px {
+            height: 300px;
+
+        }
+
+
+        aside .nav .nav-link.active {
+            border-bottom: 2px solid #110dfd;
+        }
+
+        main {
+            min-height: 100vh;
+        }
+
+        main .col .menu {
+            top: 100%;
+            left: 0;
+            transition: top 0.2s;
+        }
+
+        .w30px {
+            width: 30px;
+        }
+
+        .h30px {
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Flicker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            挖掘
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            印刷品
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            購買pro
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center ms-auto" style="min-width: 320px;">
+                    <div class="position-relative" style="width: 220px;">
+                        <input class="form-control rounded-pill bg-secondary border-0 text-light ps-5" type="search"
+                            placeholder="相片人物或群組" aria-label="Search" />
+                        <span class="position-absolute top-50 start-0 translate-middle-y ps-3">
+                            <i class="fa-solid fa-magnifying-glass text-light"></i>
+                        </span>
+                    </div>
+                    <button type="button" class="btn btnLogin ms-2 me-2">登入</button>
+                    <button type="button" class="btn btn-danger ms-2 me-2">註冊</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-dark">
+        <div id="carouselExample" class="carousel slide h-100">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0"
+                    class="position-relative active" aria-current="true" aria-label="Slide 1">
+                    <img src="https://images.pexels.com/photos/1086583/pexels-photo-1086583.jpeg"
+                        class="h30px w30px object-fit-contain position-absolute start-0 top-0" alt="...">
+                </button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"
+                    class="position-relative">
+                    <img src="https://images.pexels.com/photos/130621/pexels-photo-130621.jpeg"
+                        class="h30px w30px object-fit-contain position-absolute start-0 top-0" alt="...">
+                </button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"
+                    class="position-relative">
+                    <img src="https://images.pexels.com/photos/1452701/pexels-photo-1452701.jpeg"
+                        class="h30px w30px object-fit-contain position-absolute start-0 top-0" alt="...">
+                </button>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <img src="https://images.pexels.com/photos/1086583/pexels-photo-1086583.jpeg"
+                        class="h-100 w-100 object-fit-contain" alt="...">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="https://images.pexels.com/photos/130621/pexels-photo-130621.jpeg"
+                        class="h-100 w-100  object-fit-contain" alt="...">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="https://images.pexels.com/photos/1452701/pexels-photo-1452701.jpeg"
+                        class="h-100 w-100  object-fit-contain" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <main></main>
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="nav justify-content-between">
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+            </div>
+            <div class="nav justify-content-between border-top">
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light me-auto">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light ms-auto">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+                <a href="#" class="nav-link text-light">聯絡我們</a>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

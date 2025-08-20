@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>flex in bs</title>
+    <style>
+        .w50px {
+            width: 50px;
+        }
+
+        .w600px {
+            width: 400px;
+        }
+
+        .h60px {
+            height: 60px;
+        }
+
+        .h90px {
+            height: 90px;
+        }
+
+        .h120px {
+            height: 120px;
+        }
+
+        .h240px {
+            height: 240px;
+        }
+
+        .h400px {
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .container>.row>.col-2*3>.h60px -->
+    <div class="container">
+        <div class="row h400px bg-secondary-subtle align-items-end">
+            <div class="col-2">
+                <div class="h60px bg-secondary text-light d-flex  justify-content-center align-items-center">1</div>
+            </div>
+            <div class="col-2 ms-auto">
+                <div class="h120px bg-secondary text-light d-flex justify-content-center align-items-center">2</div>
+            </div>
+            <div class="col-2">
+                <div class="h90px bg-secondary text-light d-flex justify-content-center align-items-center">3</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
